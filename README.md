@@ -29,6 +29,7 @@
 
 ```bash
 # 克隆项目到本地（如果需要）
+git clone https://github.com/sing1ee/a2a-adk-expense-reimbursement.git
 cd a2a-adk-expense-reimbursement
 
 # 创建环境变量文件
@@ -54,8 +55,9 @@ uv run .
 打开新的终端窗口：
 
 ```bash
+git clone https://github.com/a2aproject/a2a-samples.git
 # 导航到CLI客户端目录（假设在samples/python/hosts/cli）
-cd samples/python/hosts/cli
+cd a2a-samples/samples/python/hosts/cli
 
 # 连接到报销代理
 uv run . --agent http://localhost:10002
@@ -223,11 +225,3 @@ uv run . 2>&1 | tee agent.log
 - **数据处理**：谨慎处理代理卡片、消息、工件等数据
 - **凭据管理**：实施适当的凭据保护措施
 - **权限控制**：限制代理的访问权限和操作范围
-
-## 🤝 贡献
-
-欢迎提交Issues和Pull Requests来改进这个项目。
-
-## 📄 许可证
-
-请参考项目许可证文件了解使用条款。
