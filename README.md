@@ -2,6 +2,10 @@
 
 这是一个基于Google Agent Development Kit (ADK)开发的费用报销智能代理，作为[Agent2Agent](https://a2aprotocol.ai/) ([A2A](https://a2aprotocol.ai/))服务器运行。该代理的核心特性是**智能表单生成**：当用户的报销请求缺少必要信息时，代理会自动生成一个表单供用户填写，确保收集到完整的报销信息后再进行处理。
 
+## 源代码
+
+[A2A ADK Sample](https://github.com/sing1ee/a2a-adk-expense-reimbursement)
+
 ## 🎯 项目特色
 
 - **智能表单交互**：自动检测缺失信息并生成动态表单
