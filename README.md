@@ -1,11 +1,11 @@
 # ADK费用报销代理 (Expense Reimbursement Agent)
 
-这是一个基于Google Agent Development Kit (ADK)开发的费用报销智能代理，作为Agent2Agent (A2A)服务器运行。该代理的核心特性是**智能表单生成**：当用户的报销请求缺少必要信息时，代理会自动生成一个表单供用户填写，确保收集到完整的报销信息后再进行处理。
+这是一个基于Google Agent Development Kit (ADK)开发的费用报销智能代理，作为[Agent2Agent](https://a2aprotocol.ai/) ([A2A](https://a2aprotocol.ai/))服务器运行。该代理的核心特性是**智能表单生成**：当用户的报销请求缺少必要信息时，代理会自动生成一个表单供用户填写，确保收集到完整的报销信息后再进行处理。
 
 ## 🎯 项目特色
 
 - **智能表单交互**：自动检测缺失信息并生成动态表单
-- **A2A协议支持**：标准化的代理间通信协议
+- **[A2A](https://a2aprotocol.ai/)协议支持**：标准化的代理间通信协议
 - **流式处理**：支持实时响应和状态更新
 - **Google ADK集成**：基于Google最新的代理开发工具包
 
@@ -92,7 +92,7 @@ a2a-adk-expense-reimbursement/
 ### 主要组件说明
 
 #### 1. `__main__.py` - 服务器入口
-- 配置A2A服务器和代理信息
+- 配置[A2A](https://a2aprotocol.ai/)服务器和代理信息
 - 设置代理技能和能力描述
 - 启动HTTP服务器监听请求
 
@@ -100,13 +100,13 @@ a2a-adk-expense-reimbursement/
 包含三个关键工具函数：
 
 - **`create_request_form()`**: 创建报销表单模板
-- **`return_form()`**: 将表单封装为A2A协议格式返回
+- **`return_form()`**: 将表单封装为[A2A](https://a2aprotocol.ai/)协议格式返回
 - **`reimburse()`**: 执行实际的报销审批操作
 
 #### 3. `agent_executor.py` - 请求执行器
-- 处理A2A协议的请求和响应
+- 处理[A2A](https://a2aprotocol.ai/)协议的请求和响应
 - 管理任务状态（工作中、需要输入、已完成等）
-- 协调代理与A2A服务器的通信
+- 协调代理与[A2A](https://a2aprotocol.ai/)服务器的通信
 
 ## 🔄 核心工作流程
 
@@ -215,7 +215,7 @@ uv run . 2>&1 | tee agent.log
 
 ## ⚠️ 安全注意事项
 
-**重要提醒**：本示例代码仅用于演示Agent2Agent (A2A)协议的工作机制。在构建生产应用时，必须将任何外部代理视为潜在的不可信实体。
+**重要提醒**：本示例代码仅用于演示[Agent2Agent](https://a2aprotocol.ai/) ([A2A](https://a2aprotocol.ai/))协议的工作机制。在构建生产应用时，必须将任何外部代理视为潜在的不可信实体。
 
 ### 安全措施
 
